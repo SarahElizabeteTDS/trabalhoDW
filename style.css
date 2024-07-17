@@ -18,8 +18,8 @@ header{
 header h1{
     text-align: center;
     color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 header #menu ul{
@@ -46,6 +46,30 @@ header #menu ul li a:hover{
 
 .container {
     padding: 2em;
+}
+
+.destaque {
+    background-color: #f4f4f4;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.agenda{
+    background-color: #f4f4f4;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.formulario label {
+    display: block;
+    margin: 1em 0 0.5em;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
 }
 
 
