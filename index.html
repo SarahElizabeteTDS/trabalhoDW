@@ -24,12 +24,30 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <section id="home" class="destaque">
-                <h2>Destaques do Cantor</h2>
-                <p>Aqui você encontra os maiores sucessos do cantor.</p>
-            </section>
+        <div class="imagem">
+            <img src="imagens/irmano.jpg" alt="Imagem da Dupla">
+            <button class="button" onclick="mostrarDescricao()">Ver Descrição</button>
+            <div class="description" id="description">
+                <h2>História da Dupla Sertaneja</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ab quam, delectus non reiciendis recusandae exercitationem. Architecto vitae, aut dicta velit harum debitis necessitatibus doloribus. Illo esse aspernatur corporis itaque.
+                Exercitationem quod officiis rerum molestiae a sapiente nihil animi! Assumenda nesciunt rerum culpa quos officia, fuga pariatur laborum quae magni corrupti quidem, enim quas nobis eos sequi ipsam beatae. Officia.
+                Eos incidunt labore autem quasi cum nihil accusamus inventore beatae ducimus saepe dolores illo recusandae asperiores, ipsam sed placeat distinctio tempora sint, quas tempore exercitationem temporibus. Est autem quod magni?
+                Tempore laborum quis earum eaque, inventore aut dolores. Mollitia incidunt officiis, beatae quasi optio dolorum voluptas ex debitis vel quas quae deleniti inventore perferendis ab quaerat sit tempora rerum iusto!
+                Minima, sequi? Incidunt praesentium ducimus expedita inventore! Omnis, doloremque harum, laboriosam ea explicabo ab quasi architecto quisquam officia beatae tempora maiores laudantium eos at similique assumenda fugiat alias? Iste, optio?</p>
+            </div>
         </div>
+
+        <script>
+            function mostrarDescricao() {
+                var desc = document.getElementById('description');
+                if (desc.style.display === 'none' || desc.style.display === '') {
+                    desc.style.display = 'block';
+                } else {
+                    desc.style.display = 'none';
+                }
+            }
+        </script>
+
     </main>
 </body>
 </html>
