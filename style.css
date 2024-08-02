@@ -63,6 +63,27 @@ header #menu ul li a:hover{
     font-weight: 500;
 }
 
+.historia{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.discografia{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.texto-fotos{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    font-weight: 500;
+}
+
 .link-video {
     display: flex;
     justify-content: center;
@@ -78,13 +99,13 @@ header #menu ul li a:hover{
 
 
 .destaque {
-    background-color: #f4f4f4;
+    background-color: #322113;
     padding: 2em;
     margin-bottom: 2em;
 }
 
 .agenda{
-    background-color: #f4f4f4;
+    background-color: #322113;
     padding: 2em;
     margin-bottom: 2em;
 }
@@ -99,7 +120,11 @@ header #menu ul li a:hover{
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
+    background-color: rgb(68, 36, 1);
 }
 
-
-
+.formulario input[type="submit"]{
+    width: 200px;
+    background-color: rgb(68, 36, 1);
+    color: aliceblue;
+}
