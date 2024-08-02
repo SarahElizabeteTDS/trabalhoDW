@@ -5,10 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    color: rgba(240, 248, 255, 0.74);
 }
 
 body{
-    background-color: #ffffff;
+    background-color: rgb(39, 36, 36);
 }
 
 header{
@@ -18,7 +19,7 @@ header{
 
 header h1{
     text-align: center;
-    color: #ffffff;
+    color: aliceblue;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -34,7 +35,7 @@ header #menu ul li{
 }
 
 header #menu ul li a{
-    color: #ffffff;
+    color: rgb(240, 248, 255);
     text-decoration: none;
     padding: 20px;
     display: inline-block;
