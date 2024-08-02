@@ -12,7 +12,8 @@ body{
 }
 
 header{
-    background-color: #333;
+    background-color: #322113;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.267);
 }
 
 header h1{
@@ -25,7 +26,7 @@ header h1{
 header #menu ul{
     list-style: none;
     padding-left: 32%;
-    background-color: #333
+    background-color: #1f150c;
 }
 
 header #menu ul li{
@@ -41,7 +42,7 @@ header #menu ul li a{
 }
 
 header #menu ul li a:hover{
-    background-color: #362705;
+    background-color: #4d3420;
 }
 
 .container {
@@ -49,34 +50,31 @@ header #menu ul li a:hover{
 }
 
 .imagem{
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    display: flex;
+    float: left;
+    height: 500px;
 }
 
-.button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+.desc-cantor{
+    display: flex;
+    padding: 30px;
+    justify-content: left;
+    font-weight: 500;
 }
 
-.description {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+.link-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
+.link-video img {
+    height: 10px;
+    width: auto;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.537);
+}
+
 
 .destaque {
     background-color: #f4f4f4;
