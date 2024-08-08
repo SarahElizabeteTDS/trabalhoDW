@@ -54,11 +54,8 @@ header #menu ul li a:hover{
 }
 
 .imagem{
-    display: flex;
-    height: 57vw;
-    width: 99.6vw;
-    float: left;
-    height: 500px;
+    height: 100vw;
+    width: 100vw;
 }
 
 .desc-cantor{
@@ -157,6 +154,12 @@ header #menu ul li a:hover{
     margin-bottom: 2em;
 }
 
+.historia h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
 .historia p {
     display: flex;
     justify-content: left;
@@ -165,12 +168,6 @@ header #menu ul li a:hover{
     font-size: 20px;
 }
 
-.historia h2{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-}
 
 .formulario label {
     display: block;
