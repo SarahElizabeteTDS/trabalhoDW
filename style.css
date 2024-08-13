@@ -91,6 +91,20 @@ header #menu ul li a:hover{
     font-weight: 500;
 }
 
+.fotos-esquerda{
+    display: flex;
+    float: left;
+    width: 20px;
+    height: 30px;
+}
+
+.fotos-direita{
+    display: flex;
+    float: right;
+    width: 20px;
+    height: 30px;
+}
+
 .texto-fotos{
     display: flex;
     padding: 30px;
