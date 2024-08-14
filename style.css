@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    color:  white;
+    color:  #F8F4E1;;
 }
 
 body{
@@ -22,7 +22,7 @@ header{
 
 header h1{
     text-align: center;
-    color: aliceblue;
+    color: #F8F4E1;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -38,7 +38,7 @@ header #menu ul li{
 }
 
 header #menu ul li a{
-    color: rgb(240, 248, 255);
+    color: #F8F4E1;
     text-decoration: none;
     padding: 20px;
     display: inline-block;
@@ -96,7 +96,7 @@ header #menu ul li a:hover{
 }
 
 .texto-container h2 {
-    color: aliceblue;
+    color: #F8F4E1;
     margin-top: 20px;
 }
 
@@ -120,11 +120,43 @@ header #menu ul li a:hover{
     }
 }
 
-.discografia{
-    display: flex;
-    padding: 30px;
-    justify-content: center;
-    font-weight: 500;
+.discografia-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.album {
+    background-color: #352b22;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.album img {
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 10px;
+    margin: 0 auto; 
+}
+
+.album-info {
+    padding: 20px;
+}
+
+.album-info h2 {
+    color: #F8F4E1;
+    margin: 0 0 10px 0;
+}
+
+.album-info p {
+    margin: 5px 0;
+}
+
+.album-info p strong {
+    font-weight: bold;
 }
 
 .galeria-fotos {
@@ -224,7 +256,7 @@ header #menu ul li a:hover{
     border: none;
     background-color: transparent;
     cursor: pointer;
-    color: white;
+    color: #F8F4E1;
     padding: 30px;
 }
 
@@ -259,8 +291,9 @@ header #menu ul li a:hover{
 }
 
 .info h2 {
-    color: aliceblue;
+    color: #F8F4E1;
     margin: 0 0 10px 0;
+    text-align: center;
 }
 
 .info p {
@@ -273,13 +306,17 @@ header #menu ul li a:hover{
 }
 
 .historia h2 {
-    color: aliceblue;
+    color: #F8F4E1;
     margin-bottom: 10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 
 .historia p {
     line-height: 1.6;
     margin-top: 10px;
+    text-align: center;
 }
 
 .agenda-container {
@@ -323,12 +360,12 @@ header #menu ul li a:hover{
 
 .evento-info {
     padding: 20px;
-    margin-left: 80px; /* Espaço para o evento-data */
+    margin-left: 80px; 
 }
 
 .btn-detalhes {
     background-color: #322113;
-    color: #fff;
+    color: #F8F4E1;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -351,46 +388,70 @@ header #menu ul li a:hover{
     display: block;
 }
 
+.contato-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #352b22;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-.formulario label {
+.contato-container h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
     display: block;
-    margin: 1em 0 0.5em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding: 10px 10px 10px 0px;
 }
 
-.formulario input,
-.formulario textarea {
+.form-group input, .form-group textarea {
     width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    background-color: rgb(68, 36, 1);
+    padding: 10px;
+    border: 1px solid #F8F4E1;
+    border-radius: 5px;
+    color:  #352b22;
+    background-color: #F8F4E1;
 }
 
-.formulario input[type="submit"]{
-    width: 200px;
-    background-color: rgb(68, 36, 1);
-    color: aliceblue;
+.form-group textarea {
+    resize: vertical; 
+    color:  #352b22;
+    background-color: #F8F4E1;
+}
+
+button {
+    background-color: rgb(73, 55, 35);
+    color: #F8F4E1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #352b22;
 }
 
 ::-webkit-scrollbar {
     width: 12px; 
-    height: 12px; 
 }
 
 ::-webkit-scrollbar-track {
-    background: #383025; 
+    background: #F8F4E1; 
     border-radius: 10px; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #888; 
-    border-radius: 10px;
-    border: 3px solid #f4f4f4; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #31271d; 
-}
-
-::-webkit-scrollbar-thumb:active {
-    background-color: #332d2d; 
+    background: #352b22; 
+    border-radius: 10px; 
+    border: 3px solid #322113;
 }
