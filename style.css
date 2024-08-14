@@ -71,17 +71,53 @@ header #menu ul li a:hover{
     font-weight: 500;
 }
 
-.titulo-historia{
+.historia-container {
     display: flex;
-    padding: 30px 0px 0px 30px;
-    justify-content: center;
-    text-align: center;
-    font-weight: 500;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 40px auto 0 auto;
+    max-width: 1200px;
+    background-color: #352b22;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.historia{
-    display: flex;
-    padding: 30px;
+.imagem-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.texto-container {
+    text-align: left;
+    max-width: 800px;
+}
+
+.texto-container h2 {
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.texto-container p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .historia-container {
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .imagem-container {
+        margin-right: 40px;
+    }
+
+    .texto-container {
+        text-align: justify;
+    }
 }
 
 .discografia{
@@ -91,25 +127,49 @@ header #menu ul li a:hover{
     font-weight: 500;
 }
 
-.fotos-esquerda{
+.galeria-fotos {
     display: flex;
-    float: left;
-    width: 20px;
-    height: 30px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+    margin: 20px;
 }
 
-.fotos-direita{
-    display: flex;
-    float: right;
-    width: 20px;
-    height: 30px;
+.fotos {
+    position: relative; 
+    flex-basis: calc(33.333% - 20px);
+    border: 5px solid #352b22;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.texto-fotos{
-    display: flex;
-    padding: 30px;
-    justify-content: center;
-    font-weight: 500;
+.descricao-sobreposto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.fotos:hover .descricao-sobreposto {
+    opacity: 1;
+}
+
+.fotos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fotos:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .link-video {
@@ -168,16 +228,127 @@ header #menu ul li a:hover{
     padding: 30px;
 }
 
-.destaque {
-    background-color: #322113;
-    padding: 2em;
-    margin-bottom: 2em;
+.sucesso-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #352b22;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.agenda{
+.album-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.album-info img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info {
+    max-width: 600px;
+}
+
+.info h2 {
+    color: aliceblue;
+    margin: 0 0 10px 0;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.historia {
+    max-width: 100%;
+    text-align: left;
+}
+
+.historia h2 {
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.historia p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.agenda-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.evento {
+    background-color: #352b22;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.evento-data {
     background-color: #322113;
-    padding: 2em;
-    margin-bottom: 2em;
+    color: #3f2f27;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.data-dia {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.data-mes {
+    font-size: 14px;
+}
+
+.evento-info {
+    padding: 20px;
+    margin-left: 80px; /* Espaço para o evento-data */
+}
+
+.btn-detalhes {
+    background-color: #322113;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-detalhes:hover {
+    background-color: #322113;
+}
+
+.detalhes {
+    display: none;
+    padding: 20px;
+    background-color: #272424;
+    border-top: 1px solid #2c2828;
+}
+
+.evento.active .detalhes {
+    display: block;
 }
 
 
@@ -198,4 +369,28 @@ header #menu ul li a:hover{
     width: 200px;
     background-color: rgb(68, 36, 1);
     color: aliceblue;
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #383025; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px;
+    border: 3px solid #f4f4f4; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #31271d; 
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #332d2d; 
 }
