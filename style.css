@@ -84,7 +84,7 @@ header #menu ul li a:hover{
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 40px auto;
     max-width: 1200px;
     background-color: #352b22;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -95,12 +95,13 @@ header #menu ul li a:hover{
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 180%;
 }
 
 .texto-container {
     text-align: left;
     max-width: 800px;
+    padding-bottom: 10px;
 }
 
 .texto-container h2 {
@@ -143,12 +144,12 @@ header #menu ul li a:hover{
 }
 
 .album img {
-    padding-top: 20px;
-    width: 100%;
-    max-width: 300px; 
-    border-radius: 20px;
-    margin: 0 auto; 
+    margin-top: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
+
 
 .album-info {
     padding: 20px;
@@ -331,11 +332,13 @@ header #menu ul li a:hover{
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .evento {
     background-color: #352b22;
     border-radius: 10px;
+    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     overflow: hidden;
@@ -371,6 +374,10 @@ header #menu ul li a:hover{
     margin-left: 80px; 
 }
 
+.evento-info h2, p{
+    padding-bottom: 10px;
+}
+
 .btn-detalhes {
     background-color: #322113;
     color: #F8F4E1;
@@ -398,9 +405,9 @@ header #menu ul li a:hover{
 
 .contato-container {
     max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #241910;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #352b22;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
