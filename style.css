@@ -129,43 +129,52 @@ header #menu ul li a:hover{
     }
 }
 
-.discografia-container {
+.discografia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
-    max-width: 1000px;
-    margin: 20px auto;
+    gap: 20px; 
 }
 
 .album {
     background-color: #352b22;
+    border: 1px solid #2c231a;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    text-align: center; 
+    padding: 15px;
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    flex: 1 1 calc(33.33% - 40px); 
+    box-sizing: border-box;
 }
 
 .album img {
-    margin-top: 20px;
-    max-width: 300px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    width: 50%;
+    border-radius: 5px;
 }
 
-
-.album-info {
-    padding: 20px;
-}
-
-.album-info h2 {
+.album h2 {
     color: #F8F4E1;
-    margin: 0 0 10px 0;
+    margin: 10px 0;
 }
 
-.album-info p {
+.album p {
     margin: 5px 0;
+    font-weight: bold;
 }
 
-.album-info p strong {
-    font-weight: bold;
+.album ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.album ul li {
+    background-color:  #1f150c;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .galeria-fotos {
@@ -272,7 +281,6 @@ header #menu ul li a:hover{
 .sucesso-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 20px;
     max-width: 1000px;
     margin: 20px auto;
@@ -284,8 +292,7 @@ header #menu ul li a:hover{
 .album-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -293,6 +300,9 @@ header #menu ul li a:hover{
     max-width: 300px;
     border-radius: 10px;
     margin-bottom: 20px;
+    position: absolute;
+    top: 270px;
+    left: 1000px;
 }
 
 .info {
@@ -302,7 +312,8 @@ header #menu ul li a:hover{
 .info h2 {
     color: #F8F4E1;
     margin: 0 0 10px 0;
-    text-align: center;
+    text-align: left;
+    padding-top: 30px;
 }
 
 .info p {
@@ -317,15 +328,15 @@ header #menu ul li a:hover{
 .historia h2 {
     color: #F8F4E1;
     margin-bottom: 10px;
-    text-align: center;
-    padding-top: 15px;
+    text-align: left;
+    padding-top: 70px;
     padding-bottom: 20px;
 }
 
 .historia p {
     line-height: 1.6;
     margin-top: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .agenda-container {
@@ -390,17 +401,6 @@ header #menu ul li a:hover{
 
 .btn-detalhes:hover {
     background-color: #322113;
-}
-
-.detalhes {
-    display: none;
-    padding: 20px;
-    background-color: #272424;
-    border-top: 1px solid #2c2828;
-}
-
-.evento.active .detalhes {
-    display: block;
 }
 
 .contato-container {
